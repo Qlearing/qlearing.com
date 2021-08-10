@@ -1,0 +1,345 @@
+#index-page .first-section {
+  position: relative;
+  font-family: "Montserrat";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#index-page .first-section .main-block {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index-page .first-section .main-block .project-description h1 {
+  margin-bottom: 15px;
+}
+
+#index-page .first-section .main-block .project-description p {
+  color: #838383;
+}
+
+#index-page .first-section .main-block .project-description .btns-block {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  #index-page .first-section {
+    height: 100vh;
+  }
+  #index-page .first-section .main-block {
+    width: 80vw;
+  }
+  #index-page .first-section .main-block .illustration {
+    position: relative;
+  }
+  #index-page .first-section .main-block .illustration img {
+    width: 40vw;
+  }
+  #index-page .first-section .main-block .illustration .bird {
+    width: 5vw;
+    position: absolute;
+    top: 7vw;
+    left: 5vw;
+    -webkit-animation: hoverbird 2s ease-in-out infinite alternate;
+            animation: hoverbird 2s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes hoverbird {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    100% {
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+  }
+  @keyframes hoverbird {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    100% {
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #index-page .first-section {
+    height: 100vh;
+  }
+  #index-page .first-section .main-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 80vw;
+  }
+  #index-page .first-section .main-block .illustration .bird {
+    z-index: 1;
+    width: 15vw;
+    position: absolute;
+    top: 15vw;
+    left: 5vw;
+    -webkit-animation: hoverbird 2s ease-in-out infinite alternate;
+            animation: hoverbird 2s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes hoverbird {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    100% {
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+  }
+  @keyframes hoverbird {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    100% {
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+  }
+  #index-page .first-section .main-block .illustration img {
+    z-index: -1;
+    width: 90vw;
+  }
+}
+
+#index-page .second-section {
+  position: relative;
+  font-family: "Montserrat";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#index-page .second-section .main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+#index-page .second-section .main-block .project-description h2 {
+  margin-bottom: 5px;
+}
+
+#index-page .second-section .main-block .project-description p {
+  color: #838383;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  #index-page .second-section {
+    height: 100vh;
+  }
+  #index-page .second-section .main-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #index-page .second-section .main-block .illustration img {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #index-page .second-section {
+    height: auto;
+    padding-top: 100px;
+  }
+  #index-page .second-section .main-block {
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #index-page .second-section .main-block .illustration img {
+    width: 90vw;
+  }
+}
+
+#index-page .third-section {
+  overflow: hidden;
+  position: relative;
+  font-family: "Montserrat";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#index-page .third-section ul li {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index-page .third-section ul li span {
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  font-weight: 500;
+  background: #cecece;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#index-page .third-section .main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#index-page .third-section .main-block h1 {
+  margin-bottom: 25px;
+}
+
+#index-page .third-section .main-block ul {
+  list-style: none;
+  text-align: center;
+}
+
+#index-page .third-section .main-block ul li {
+  background: #fff;
+  padding: 20px 15px;
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #838383;
+}
+
+#index-page .third-section #how-bg {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 55vw;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  opacity: 0.05;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+  #index-page .third-section {
+    height: 100vh;
+    overflow: hidden;
+  }
+  #index-page .third-section .illustration {
+    display: none;
+  }
+  #index-page .third-section .main-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #index-page .third-section .main-block ul li {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #index-page .third-section {
+    padding-bottom: 50px;
+    margin-top: 100px;
+    height: auto;
+  }
+  #index-page .third-section .main-block {
+    margin: 0 auto;
+  }
+  #index-page .third-section .main-block ul li {
+    width: 90vw;
+  }
+  #index-page .third-section #how-bg {
+    display: none;
+  }
+  #index-page .third-section .illustration img {
+    width: 90vw;
+  }
+}
+
+#index-page.darkbody .third-section .main-block ul li {
+  background: #1d1d1d;
+}
+
+#index-page.darkbody .third-section .main-block ul li span {
+  background: #1d1d1d;
+}
+
+#index-page.darkbody .third-section #how-bg {
+  opacity: 0.15;
+}
+/*# sourceMappingURL=index.css.map */

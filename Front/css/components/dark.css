@@ -1,0 +1,52 @@
+.darkbody {
+  background-color: #121212;
+}
+
+.darkbody h1, .darkbody h2, .darkbody h3, .darkbody h4, .darkbody h5, .darkbody h6 {
+  color: #fff;
+}
+
+.darkbody p {
+  color: #838383;
+}
+
+.darkbody p #how-bg {
+  color: #fff;
+}
+
+.darkbody p ul li {
+  background: #1d1d1d !important;
+}
+
+.darkbody p ul li span {
+  background: #575757;
+}
+
+.darkbody .pushwindowcontainer .pushwindow {
+  background: #1d1d1d;
+}
+
+.darkbody .pushwindowcontainer .pushwindow h1 {
+  color: #fff;
+}
+
+.darkbody .pushwindowcontainer .pushwindow .closepushwindow {
+  color: #fff;
+}
+
+.darkbody .pushwindowcontainer .pushwindow .forgot-password {
+  color: #fff !important;
+}
+
+.darkbody .pushwindowcontainer .pushwindow.langmenu li {
+  border-bottom: 2px solid #101010 !important;
+}
+
+.darkbody .pushwindowcontainer .pushwindow.mobilemenu li {
+  border-bottom: 2px solid #101010 !important;
+}
+
+.darkbody .pushwindowcontainer .pushwindow.mobilemenu li:last-child a {
+  color: #fff;
+}
+/*# sourceMappingURL=dark.css.map */

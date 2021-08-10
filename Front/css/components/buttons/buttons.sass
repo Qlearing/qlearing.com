@@ -1,0 +1,50 @@
+@import '../palette'
+    
+.btn-gradient
+    background: linear-gradient(90deg, #6F86FF 0%, rgba(249, 92, 92, 0.54) 100%)
+    box-shadow: 10px 10px 30px rgba(229, 130, 144, 0.3)
+    border-radius: 15px
+    color: #fff
+    display: block
+    width: fit-content
+    height: fit-content
+    padding: 10px 20px
+    font-size: 1em
+    cursor: pointer
+    transition: 0.5s
+    border: none
+    &:hover
+        opacity: 0.9
+        transition: 0.5s
+        box-shadow: none
+
+.btn-accolor
+    display: block
+    width: fit-content
+    color: $accentcolor
+    padding: 10px 20px
+    height: fit-content
+    white-space: nowrap
+    font-size: 1em
+    cursor: pointer
+    transition: 0.5s
+    border: 1px solid transparent
+    &:hover
+        transition: 0.5s
+
+.btn-border
+    color: $accentcolor
+    border-radius: 10px
+    border: 2px solid $accentcolor
+    font-size: 1em
+    padding: 10px 20px
+    height: fit-content
+    white-space: nowrap
+    transition: 0.3s
+    background: transparent
+    cursor: pointer
+    &:hover
+        background: $accentcolor
+        color: #fff !important
+        transition: 0.3s
+        box-shadow: 10px 10px 30px rgba(140, 130, 229, 0.3)

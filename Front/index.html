@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css?v=0.2">
+    <title>Qlearing.com</title>
+    <link href="img/bird.png" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body id="index-page">
+    <header id="header">
+        <h1 class='Logo'><a href="index.html">Qlearing.com</a></h1>
+        <div id="pcheadmenu">
+            <ul class="links">
+                <li><a class="theme-switcher"><span class="material-icons-outlined">
+                    dark_mode
+                    </span></a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a id="reg-btn">Регистрация</a></li>
+                <li><a id="login-btn" class="btn-border">Вход</a></li>
+            </ul>
+        </div>
+        <div id="mobheadmenu">
+            <span id="headmenuburger" class="material-icons-outlined">
+                menu
+            </span>
+        </div>
+
+    </header>
+    <main>
+        <div class="first-section">
+            <div class="main-block">
+                <div class="project-description">
+                    <h1>Qlearing.com</h1>
+                    <p>
+                        Заключайте ваши сделки легко! Не беспокоясь, что сначала: оплата/предоплата или товары/услуги
+                    </p>
+                    <div class="btns-block">
+                        <a onclick="pushWindow('regmenu')" class="btn-gradient">Начать</a>
+                        <a href="#second-section" class="btn-accolor">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="illustration">
+                    <img src="img/illustrationwb.png" alt="">
+                    <img src="img/bird.png" class="bird" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="second-section" class="second-section">
+            <div class="main-block">
+                <div class="illustration">
+                    <img src="img/safe.png" alt="">
+                </div>
+                <div class="project-description">
+                    <h2>Первый в мире DEFI некастодиальный <br> Escrow сервис</h2>
+                    <p>по вашим условиям и выбранным арбитром!</p>
+                    <h2>World wide known companies trust us</h2>
+                    <p>Microsoft, Canonical, HTC, EPAM, Lacit</p>
+                    <h2>Легкое подключение к функциям смарт контракта</h2>
+                    <p>для физ лиц, для проектов типа р2р, для обменников, для любых прочих сервисов, где требуется безопасная сделка, с определенными условиями и выбранным арбитром.</p>
+                </div>
+            </div>
+        </div>
+        <div class="third-section">
+            <div class="main-block">
+                <div class="illustration">
+                <img src="img/start.png">
+            </div>
+                    <h1>Начало работы</h1>
+                    <ul>
+                        <li><div><span>1</span></div>Продавец и покупатель соглашаются с условиями</li>
+                        <li><div><span>2</span></div>Покупатель платит Qlearing.com</li>
+                        <li><div><span>3</span></div>Продавец передаёт товар</li>
+                        <li><div><span>4</span></div>Покупатель получает товар</li>
+                        <li><div><span>5</span></div>Qlearing.com платит продавцу</li>
+                    </ul>
+                    <a onclick="pushWindow('regmenu')" class="btn-gradient">Начать</a>
+            </div>
+            <div id="how-bg">Start</div>
+        </div>
+    </main>
+    <footer>
+        <h1 class="Logo">
+            <a href="index.html">
+            © 2021, Qlearing.com
+            </a>
+        </h1>
+        <ul class="links">
+            <li id="language-changer" class="language-switcher">
+                рус<span class="material-icons">language</span>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contacts.html">Обратная связь</a></li>
+            <li><a href="docs.html">Правовая информация</a></li>
+        </ul>
+    </footer>
+    <script src="js/pushwindow.js?v=0.2"></script>
+    <script src="js/language.js?v=0.2"></script>
+    <script src="js/header.js?v=0.2"></script>
+    <script src="js/darkmode.js?v=0.2"></script>
+</body>
+</html>

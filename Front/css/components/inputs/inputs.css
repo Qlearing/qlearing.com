@@ -1,0 +1,36 @@
+.input {
+  padding: 15px 20px;
+  font-size: 1em;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #d0d0d0;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  padding: 15px 20px;
+  font-size: 1em;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #d0d0d0;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  resize: none;
+  background: transparent;
+}
+
+.darkbody .input {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #454545;
+}
+
+.darkbody textarea {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #454545;
+}
+/*# sourceMappingURL=inputs.css.map */

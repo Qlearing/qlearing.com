@@ -1,0 +1,98 @@
+#contacts-page .contacts-section {
+  position: relative;
+  font-family: "Montserrat";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#contacts-page .contacts-section .main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+}
+
+#contacts-page .contacts-section .main-block .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contacts-page .contacts-section .main-block form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#contacts-page .contacts-section .main-block form .btn-gradient {
+  margin-left: auto;
+}
+
+#contacts-page .contacts-section .main-block form textarea {
+  height: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  #contacts-page .contacts-section {
+    height: 100vh;
+  }
+  #contacts-page .contacts-section .main-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #contacts-page .contacts-section .main-block .illustration img {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contacts-page .contacts-section {
+    height: auto;
+    padding-top: 100px;
+  }
+  #contacts-page .contacts-section .main-block {
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #contacts-page .contacts-section .main-block form {
+    width: 90vw;
+  }
+  #contacts-page .contacts-section .main-block .illustration img {
+    width: 90vw;
+  }
+}
+
+#contacts-page.darkbody .contacts-section form {
+  background: #1d1d1d !important;
+}
+/*# sourceMappingURL=contacts.css.map */

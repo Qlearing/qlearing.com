@@ -1,0 +1,61 @@
+@import '../palette'
+    
+footer
+    display: flex
+    align-items: center
+    position: absolute
+    bottom: 0
+    left: 0
+    justify-content: space-between
+    padding: 30px 5vw
+    margin-top: 100px
+    font-family: "Raleway"
+    width: 100%
+    box-sizing: border-box
+    user-select: none
+    transition: 0.3s
+    #language-changer
+        width: fit-content
+        align-items: center
+        position: relative
+        display: flex
+        cursor: pointer
+        span
+            margin-left: 5px
+            color: #000
+    .Logo
+        a
+            color: $textlight
+        font-size: 1em
+        font-weight: 500
+    .links
+        display: flex
+        align-items: center
+        list-style: none
+        color: $textlight
+        font-size: 1em
+        li
+            a
+                color: $textlight
+            margin-left: 20px
+    @media screen and ( max-width: 767px )
+        align-items: center
+        flex-direction: column-reverse
+        position: static
+        #language-changer
+            margin-bottom: 30px
+        .links
+            width: 100%
+            margin-left: 0
+            li
+                    margin-bottom: 30px
+                    margin-left: 0
+            align-items: center
+            display: flex
+            flex-direction: column
+
+.darkbody
+    footer
+        .language-switcher
+            span
+                color: #fff !important

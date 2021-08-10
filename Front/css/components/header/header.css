@@ -1,0 +1,106 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 5vw;
+  font-family: "Raleway";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 5;
+  background-color: #fff;
+  -webkit-transition: padding 0.3s;
+  transition: padding 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+  header #pcheadmenu {
+    display: none;
+  }
+}
+
+header #mobheadmenu {
+  height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  header #mobheadmenu {
+    display: none;
+  }
+}
+
+header.fixed {
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px 5vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .theme-switcher {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .Logo a {
+  color: #6F86FF;
+  font-weight: 500;
+}
+
+header .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header .links li {
+  margin-left: 20px;
+}
+
+.darkbody header {
+  background-color: #121212;
+}
+
+.darkbody header.fixed {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.1);
+}
+
+.darkbody header #mobheadmenu #headmenuburger {
+  color: #fff;
+}
+
+.darkbody header #pcheadmenu .links li a {
+  color: #fff;
+}
+
+.darkbody header #pcheadmenu .links li:last-child a {
+  color: #6F86FF;
+}
+/*# sourceMappingURL=header.css.map */

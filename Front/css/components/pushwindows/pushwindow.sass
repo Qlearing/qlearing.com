@@ -1,0 +1,180 @@
+@import '../palette'
+    
+.pushwindowcontainer
+    position: absolute
+    left: 0
+    top: 0
+    height: 100vh
+    width: 100%
+    box-sizing: border-box
+    font-family: 'Montserrat'
+    .pushwindowbg
+        background-color: rgba(0, 0, 0, 0.5)
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05)
+        box-sizing: border-box
+        padding: 15px
+        z-index: 9
+        opacity: 1
+        animation: 0.5s pushwindowbgappear ease-in-out forwards
+        @keyframes pushwindowbgappear
+            0%
+                opacity: 0
+                transform: scale(0.7)
+            100%
+                opacity: 1
+                transform: scale(1)
+        &.hiding
+            animation: 0.5s pushwindowbgdisappear ease-in-out forwards
+            @keyframes pushwindowbgdisappear
+                0%
+                    opacity: 1
+                    transform: scale(1)
+                100%
+                    opacity: 0
+                    transform: scale(0.7)
+    .pushwindow
+        position: fixed
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        background: #fff
+        border-radius: 25px
+        box-sizing: border-box
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15)
+        padding: 15px
+        z-index: 10
+        width: 300px
+        animation: 0.5s pushwindowappear ease-in-out forwards
+        @keyframes pushwindowappear
+            0%
+                opacity: 0
+                transform: translate(-50%, -50%) scale(0.3)
+            100%
+                opacity: 1
+                transform: translate(-50%, -50%) scale(1)
+        &.hiding
+            animation: 0.5s pushwindowdisappear ease-in-out forwards
+            @keyframes pushwindowdisappear
+                0%
+                    opacity: 1
+                    transform: translate(-50%, -50%) scale(1)
+                100%
+                    opacity: 0
+                    transform: translate(-50%, -50%) scale(0.3)       
+        &.mobilemenu
+            text-align: center
+            width: 90vw       
+            padding-bottom: 0
+            span
+                margin-left: 5px
+            ul
+                list-style: none
+                display: flex
+                flex-direction: column
+                align-items: center
+                li
+                    border-bottom: 1px solid #cecece
+                    font-size: 1.5em
+                    width: 100%
+                    &:last-child
+                        border-bottom: none !important
+                        a
+                            color: #000
+                    a
+                        display: block
+                        padding: 15px
+                        color: $textlight
+                    &:last-child
+                        margin-bottom: 0
+        &.langmenu
+            text-align: center
+            width: 300px  
+            @media screen and ( max-width: 767px )
+                width: 90vw
+            padding-bottom: 0
+            ul
+                list-style: none
+                display: flex
+                flex-direction: column
+                align-items: center
+                li
+                    border-bottom: 1px solid #cecece
+                    font-size: 1.5em
+                    width: 100%
+                    &:last-child
+                        border-bottom: none
+                    a
+                        display: block
+                        padding: 15px
+                        color: $textlight
+                    &:last-child
+                        margin-bottom: 0
+        &.loginmenu
+            @media screen and ( max-width: 767px )
+                width: 90vw
+            width: 300px
+            .forgot-password
+                text-align: right
+                width: 100%
+                display: block
+                color: #000
+                cursor: pointer
+                margin-bottom: 15px
+            .footer
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .login-types
+                    img
+                        margin-right: 5px
+                        width: 30px
+                .btns-block
+                    display: flex
+            h1
+                text-align: center
+                margin-bottom: 15px
+            .input
+                padding: 15px 20px
+                font-size: 1em
+                width: 100%
+                box-sizing: border-box
+                border: 2px solid #454545
+                border-radius: 15px
+                margin-bottom: 15px
+        &.regmenu
+            @media screen and ( max-width: 767px )
+                width: 90vw
+            width: 300px
+            .footer
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .login-types
+                    img
+                        margin-right: 5px
+                        width: 30px
+                .btns-block
+                    display: flex
+            h1
+                text-align: center
+                font-size: 1.5em
+                margin-bottom: 15px
+            .input
+                padding: 15px 20px
+                font-size: 1em
+                width: 100%
+                box-sizing: border-box
+                border: 2px solid #454545
+                border-radius: 15px
+                margin-bottom: 15px
+        .closepushwindow
+            position: absolute
+            font-size: 2.5em
+            right: 15px
+            top: 15px
+            cursor: pointer

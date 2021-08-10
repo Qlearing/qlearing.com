@@ -1,0 +1,76 @@
+#docs-page .docs-section {
+  position: relative;
+  font-family: "Montserrat";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#docs-page .docs-section .main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+}
+
+#docs-page .docs-section .main-block .information h1 {
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+#docs-page .docs-section .main-block .information .docs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #838383;
+}
+
+#docs-page .docs-section .main-block .information .docs-container img {
+  width: 35px;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 767px) {
+  #docs-page .docs-section {
+    height: 100vh;
+  }
+  #docs-page .docs-section .main-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #docs-page .docs-section .main-block .illustration img {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #docs-page .docs-section {
+    height: auto;
+    padding-top: 100px;
+  }
+  #docs-page .docs-section .main-block {
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #docs-page .docs-section .main-block .illustration img {
+    width: 90vw;
+  }
+}
+/*# sourceMappingURL=docs.css.map */

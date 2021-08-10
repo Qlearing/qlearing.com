@@ -1,0 +1,71 @@
+#faq-page .faq-section {
+  position: relative;
+  font-family: "Montserrat";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#faq-page .faq-section .main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 80vw;
+  height: auto;
+}
+
+#faq-page .faq-section .main-block .faq-container h1 {
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+#faq-page .faq-section .main-block .faq-container details {
+  color: #838383;
+  width: 80vw;
+  margin-bottom: 15px;
+}
+
+#faq-page .faq-section .main-block .faq-container details summary {
+  color: #000000;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  #faq-page .faq-section {
+    padding-top: 93px;
+  }
+  #faq-page .faq-section .main-block .illustration img {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #faq-page .faq-section {
+    padding-top: 93px;
+  }
+  #faq-page .faq-section .main-block .illustration img {
+    width: 90vw;
+  }
+}
+
+#faq-page.darkbody .main-block .faq-container details {
+  color: #838383;
+}
+
+#faq-page.darkbody .main-block .faq-container details summary {
+  color: #fff;
+}
+/*# sourceMappingURL=faq.css.map */

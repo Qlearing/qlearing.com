@@ -1,0 +1,191 @@
+@import '../components/palette'
+    
+#index-page
+    .first-section
+        position: relative
+        font-family: "Montserrat"
+        user-select: none
+        .main-block
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .project-description
+                h1
+                    margin-bottom: 15px
+                p
+                    color: $textlight
+                .btns-block
+                    margin-top: 15px
+                    display: flex
+        @media screen and ( min-width: 768px )  
+            height: 100vh
+            .main-block
+                width: 80vw
+                .illustration
+                    position: relative
+                    img
+                        width: 40vw
+                    .bird
+                        width: 5vw
+                        position: absolute
+                        top: 7vw
+                        left: 5vw
+                        animation: hoverbird 2s ease-in-out infinite alternate
+                        @keyframes hoverbird
+                            0%
+                                transform: translateY(0px)
+                            100%
+                                transform: translateY(10px)
+
+        @media screen and ( max-width: 767px )
+            height: 100vh
+            .main-block
+                flex-direction: column-reverse
+                width: 80vw
+                .illustration
+                    .bird
+                        z-index: 1
+                        width: 15vw
+                        position: absolute
+                        top: 15vw
+                        left: 5vw
+                        animation: hoverbird 2s ease-in-out infinite alternate
+                        @keyframes hoverbird
+                            0%
+                                transform: translateY(0px)
+                            100%
+                                transform: translateY(10px)
+                    img
+                        z-index: -1
+                        width: 90vw
+    .second-section
+        position: relative
+        font-family: "Montserrat"
+        user-select: none
+        .main-block
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 80vw
+            justify-content: space-between
+            align-items: center
+            display: flex
+            .project-description
+                h2
+                    margin-bottom: 5px
+                p
+                    color: $textlight
+                    margin-bottom: 15px
+        @media screen and ( min-width: 768px )   
+            height: 100vh
+            .main-block
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+                .illustration
+                    img
+                        width: 40vw
+        @media screen and ( max-width: 767px )
+            height: auto
+            padding-top: 100px
+            .main-block
+                margin: 0 auto
+                flex-direction: column
+                .illustration
+                    img
+                        width: 90vw   
+                    
+    .third-section
+        overflow: hidden
+        position: relative
+        font-family: "Montserrat"
+        user-select: none
+        ul
+            li
+                text-align: left
+                display: flex
+                align-items: center
+                span
+                    width: 30px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    height: 30px
+                    font-weight: 500
+                    background: #cecece
+                    color: #fff
+                    border-radius: 50%
+                    margin-right: 10px
+        .main-block
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 80vw
+            flex-direction: column
+            h1
+                margin-bottom: 25px
+            ul
+                list-style: none
+                text-align: center
+                li
+                    background: #fff
+                    padding: 20px 15px
+                    border-radius: 15px
+                    box-sizing: border-box
+                    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15)
+                    width: fit-content
+                    margin: 0 auto
+                    margin-bottom: 20px
+                    color: $textlight
+        #how-bg
+            user-select: none
+            font-size: 55vw
+            position: absolute
+            z-index: -1
+            left: 50%
+            top: 50%
+            opacity: 0.05
+            transform: translate(-50%, -50%)
+        @media screen and ( min-width: 768px )        
+            height: 100vh
+            overflow: hidden
+            .illustration
+                display: none
+            .main-block
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+                ul
+                    li
+                        width: 500px
+
+        @media screen and ( max-width: 767px )
+            padding-bottom: 50px
+            margin-top: 100px
+            height: auto
+            .main-block
+                margin: 0 auto
+                ul
+                    li
+                        width: 90vw
+            #how-bg
+                display: none
+            .illustration
+                img
+                    width: 90vw
+    &.darkbody
+        .third-section
+            .main-block
+                ul
+                    li
+                        background: $dsurface
+                        span
+                            background: $dsurface
+            #how-bg
+                opacity: 0.15

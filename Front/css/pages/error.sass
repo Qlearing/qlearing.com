@@ -1,0 +1,34 @@
+@import '../components/palette'
+
+#error-page
+    padding-bottom: 0
+    .error-section
+        height: 100vh
+        position: relative
+        .error-block
+            font-family: "Montserrat"
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .illustration
+                img
+                    width: 30vw
+                    @media screen and ( max-width: 767px )
+                        width: 90vw
+
+        h1
+            font-size: 5em
+            text-align: center
+        p
+            text-align: center
+    footer
+        margin-top: 0
+        position: absolute
+        @media screen and ( max-width: 767px )
+            position: static
+            

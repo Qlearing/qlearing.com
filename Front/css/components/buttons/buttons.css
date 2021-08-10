@@ -1,0 +1,78 @@
+.btn-gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#6F86FF), to(rgba(249, 92, 92, 0.54)));
+  background: linear-gradient(90deg, #6F86FF 0%, rgba(249, 92, 92, 0.54) 100%);
+  -webkit-box-shadow: 10px 10px 30px rgba(229, 130, 144, 0.3);
+          box-shadow: 10px 10px 30px rgba(229, 130, 144, 0.3);
+  border-radius: 15px;
+  color: #fff;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: none;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-accolor {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #6F86FF;
+  padding: 10px 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  white-space: nowrap;
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+
+.btn-accolor:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-border {
+  color: #6F86FF;
+  border-radius: 10px;
+  border: 2px solid #6F86FF;
+  font-size: 1em;
+  padding: 10px 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  white-space: nowrap;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-border:hover {
+  background: #6F86FF;
+  color: #fff !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 10px 10px 30px rgba(140, 130, 229, 0.3);
+          box-shadow: 10px 10px 30px rgba(140, 130, 229, 0.3);
+}
+/*# sourceMappingURL=buttons.css.map */

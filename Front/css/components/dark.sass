@@ -1,0 +1,33 @@
+@import 'palette'
+
+.darkbody
+    background-color: $dbackground
+    h1, h2, h3, h4, h5, h6
+        color: $dtext
+    p
+        color: $dtextlight
+        #how-bg
+            color: #fff
+        ul
+            li
+                background: $dsurface !important
+                span
+                    background: #575757
+    .pushwindowcontainer
+        .pushwindow
+            background: $dsurface
+            h1
+                color: #fff
+            .closepushwindow
+                color: #fff
+            .forgot-password
+                color: #fff !important
+            &.langmenu
+                li
+                    border-bottom: 2px solid #101010 !important
+            &.mobilemenu
+                li
+                    border-bottom: 2px solid #101010 !important
+                    &:last-child
+                        a
+                            color: #fff

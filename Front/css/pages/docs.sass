@@ -1,0 +1,43 @@
+@import '../components/palette'
+    
+#docs-page   
+    .docs-section
+        position: relative
+        font-family: "Montserrat"
+        user-select: none
+        .main-block
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 80vw
+            .information
+                h1
+                    margin-bottom: 15px
+                    font-weight: 400
+                .docs-container
+                    display: flex
+                    margin-bottom: 15px
+                    align-items: center
+                    color: $textlight
+                    img
+                        width: 35px
+                        margin-right: 15px
+        @media screen and ( min-width: 767px )   
+            height: 100vh
+            .main-block
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+                .illustration
+                    img
+                        width: 40vw
+        @media screen and ( max-width: 767px )
+            height: auto
+            padding-top: 100px
+            .main-block
+                margin: 0 auto
+                flex-direction: column-reverse
+                .illustration
+                    img
+                        width: 90vw   

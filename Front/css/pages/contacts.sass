@@ -1,0 +1,54 @@
+@import '../components/palette'
+
+#contacts-page
+    .contacts-section
+        position: relative
+        font-family: "Montserrat"
+        user-select: none
+        .main-block
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 80vw
+            .form-container
+                display: flex
+                flex-direction: column
+            form
+                display: flex
+                background: #fff
+                box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15)
+                padding: 15px
+                border-radius: 15px
+                margin-top: 15px
+                flex-direction: column
+                box-sizing: border-box
+                .btn-gradient
+                    margin-left: auto   
+                textarea
+                    height: 150px
+        @media screen and ( min-width: 768px )   
+            height: 100vh
+            .main-block
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)   
+                .illustration
+                    img
+                        width: 40vw
+        @media screen and ( max-width: 767px )
+            height: auto
+            padding-top: 100px
+            .main-block
+                margin: 0 auto
+                flex-direction: column-reverse
+                form
+                    width: 90vw
+                .illustration
+                    img
+                        width: 90vw   
+
+#contacts-page.darkbody
+    .contacts-section
+        form
+            background: $dsurface !important

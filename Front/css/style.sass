@@ -1,0 +1,47 @@
+@import 'components/dark'
+@import 'components/pushwindows/pushwindow'
+@import 'components/buttons/buttons'
+@import 'components/header/header'
+@import 'components/inputs/inputs'
+@import 'components/footer/footer'
+@import 'components/palette'
+
+@import 'pages/index'
+@import 'pages/faq'
+@import 'pages/docs'
+@import 'pages/contacts'
+@import 'pages/about'
+@import 'pages/main'
+@import 'pages/deal'
+@import 'pages/error'
+*, html
+    margin: 0
+    padding: 0
+    outline: none !important
+    scroll-behavior: smooth
+
+a
+    color: #000
+    text-decoration: none
+    user-select: none
+    cursor: pointer
+
+h1, h2, h3, h4, h5, h6
+    font-weight: 500
+    color: $text
+
+body
+    position: relative
+    min-height: 100vh
+    @media screen and ( min-width: 768px )
+        padding-bottom: 84px
+
+main
+    animation: appearmain 0.3s ease-in-out
+    @keyframes appearmain
+        0%
+            opacity: 0
+            transform: scale(0.8) translateY(100px)
+        100%
+            opacity: 1 
+            transform: scale(1) translateY(0)

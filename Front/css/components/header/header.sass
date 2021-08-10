@@ -1,0 +1,65 @@
+@import '../palette'
+
+header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 20px 5vw
+    font-family: "Raleway"
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    box-sizing: border-box
+    user-select: none
+    z-index: 5
+    background-color: $background
+    transition: padding 0.3s
+    #pcheadmenu
+        @media screen and ( max-width: 767px )
+            display: none
+    #mobheadmenu
+        height: 24px
+        @media screen and ( min-width: 768px )
+            display: none
+        #headmenburger
+            
+            
+    &.fixed
+        position: fixed
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15)
+        padding: 15px 5vw
+        transition: 0.3s
+    .theme-switcher
+        cursor: pointer
+        position: relative
+        display: flex
+        align-items: center
+    .Logo
+        a
+            color: $accentcolor
+            font-weight: 500
+    .links
+        display: flex
+        align-items: center
+        list-style: none
+        li
+            margin-left: 20px
+
+.darkbody  
+    header
+        background-color: $dbackground
+        &.fixed
+            box-shadow: none
+            box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.1)
+        #mobheadmenu
+            #headmenuburger
+                color: #fff
+        #pcheadmenu
+            .links
+                li
+                    a
+                        color: #fff
+                    &:last-child
+                        a
+                            color: $accentcolor
